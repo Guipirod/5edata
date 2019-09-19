@@ -1,0 +1,3079 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CustomTiamat",
+				"abbreviation": "CT",
+				"full": "Custom Tiamat",
+				"url": "",
+				"authors": [
+					"Guillem Pitarch Rodrigo"
+				],
+				"convertedBy": []
+			}
+		]
+	},
+	"dateAdded": 1568845246,
+	"monster": [
+		{
+			"name": "Langdedrosa Cyanwrath",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-dragon"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item splint armor +1}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 60",
+				"average": 157
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 18,
+			"int": 10,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"con": "+8",
+				"cha": "+8",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+9",
+				"insight": "+6",
+				"intimidation": "+8",
+				"perception": "+6",
+				"religion": "+4"
+			},
+			"senses": [
+				"blindsight 10 ft., darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"lightning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned"
+			],
+			"languages": [
+				"Common, Draconic"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Langdedrosa is a 12th-level spellcaster. His spellcasting ability is Charisma(spell save {@dc 16}, +8 to hit with spell attacks). Langdedrosa knows the following spells:"
+					],
+					"footerEntries": [
+						"Langdedrosa can use the amulet he carries on his left hand as a spellcasting focus for the spells that require material components. He also can perform somatic components even when he has weapons or a shield in one or both hands, and has advantage on Constitution saving throws that he makes to maintain his concentration on a spells."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell absorb elements|xge}",
+								"{@spell chromatic orb}",
+								"{@spell command}",
+								"{@spell detect magic}",
+								"{@spell shield of faith}",
+								"{@spell thunderous smite}",
+								"{@spell wrathful smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell branding smite}",
+								"{@spell enlarge/reduce}",
+								"{@spell find steed}",
+								"{@spell scorching ray}",
+								"{@spell zone of truth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blinding smite}",
+								"{@spell dispel magic}",
+								"{@spell lightning bolt}",
+								"{@spell revivify}",
+								"{@spell slow}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Improved critical",
+					"entries": [
+						"Langdedrosa's weapon attacks score a critical hit on a roll of 19 or 20."
+					]
+				},
+				{
+					"name": "Action Surge (Recharges on a Short or Long Rest)",
+					"entries": [
+						"On this turn, Langdedrosa can take one additional action."
+					]
+				},
+				{
+					"name": "Living tempest",
+					"entries": [
+						"Any lightning damage Langdedrosa deals ignores damage resistance and treats immunities as resistances."
+					]
+				},
+				{
+					"name": "Aura of protection",
+					"entries": [
+						"Langdedrosa and any creature he chooses within 10 feet of him gains a bonus to any saving throw equal to his Charisma modifier."
+					]
+				},
+				{
+					"name": "Improved divine smite",
+					"entries": [
+						"Whenever Langdedrosa hits a creature with a melee weapon, the creature takes an extra {@dice 1d8} lightning damage (already included). When he hits a creature with a melee weapon attack, he can expend one spell slot to deal lightning damage to the target, in addition to the weapon's damage. The extra damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st, to a maximum of {@dice 5d8}. The damage increases by {@dice 1d8} if the target is an undead or a fiend, to a maximum of {@dice 6d8}."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Langdedrosa's carries a {@item Greatsword|PHB}+2, a {@item Splint Armor|PHB}+1 and a {@item Ring of Protection|DMG}, whose modifiers have already been included on his stats."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Langdedrosa makes two attacks, either with his greatsword or spears."
+					]
+				},
+				{
+					"name": "Greatsword+2",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage plus 4 ({@damage 1d8}) lightning damage. If any damage die rolls 1 or 2 Langdedrosa can reroll it once."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage plus 4 ({@damage 1d8}) lightning damage in melee, or 8 ({@damage 1d6 + 5}) piercing damage at range."
+					]
+				},
+				{
+					"name": "Lightning Breath {@recharge 5}",
+					"entries": [
+						"Langdedrosa exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 55 ({@dice 10d10})  lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Lay on Hands",
+					"entries": [
+						"Langdedrosa has a pool of 60 hit points that replenishes when he takes a long rest. He can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. He also can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands for 5 hit points each. Has no effect on undead or constructs.",
+						"Alternatively once per short or long rest he can spend his bonus action to retrieve 8 ({@dice 1d10 + 3}) hit points."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Langdedrosa adds 4 to its AC against one melee attack from an attacker he can see, then, if the attack misses, he can make a weapon attack against the target with advantage. Langdedrosa can only use this reaction if he is wielding a melee weapon."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Weapon attack",
+					"entries": [
+						"Langdedrosa makes one weapon attack."
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"Langdedrosa makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Static Cast",
+					"entries": [
+						"This action can only be used once per turn. Langdedrosa covers himself with an aura of electricity thats either provides him with 15 temporary hit points or ends a negative condition on himself, he can after that either cast an action spell or make a ranged spell attack of 11 ({@damage 2d10}) lightning damage."
+					]
+				},
+				{
+					"name": "Thunder Dash (Costs 2 Actions)",
+					"entries": [
+						"A veil of electricity covers Langdedrosa, who flashes for a moment and moves in a straight line as if he was a lightning bolt, reappearing on an unoccupied possition no further from 30 feet. Each creature on a possition Langdedrosa went through on his movement must take a {@dc 16} Dexterity saving throw, taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "img/bestiary/HotDQ/Langdedrosa Cyanwrath.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "img/HotDQ/Langdedrosa Cyanwrath.png",
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"S",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"AOE"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 4,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Dragonvoice",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 15",
+				"average": 42
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"wis": "+5",
+				"cha": "+2"
+			},
+			"skill": {
+				"religion": "+2",
+				"persuasion": "+2",
+				"perception": "+5",
+				"history": "+2"
+			},
+			"passive": 15,
+			"languages": [
+				"Common, Draconic"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The dragonvoice is a 5th-level spellcaster that uses Wisdom as its spellcasting ability (spell save {@dc 13}, +5 to hit with spell attacks). The dragonvoice has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell sacred flame}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|xge}",
+								"{@spell bless}",
+								"{@spell chromatic orb}",
+								"{@spell cure wounds}",
+								"{@spell detect magic}",
+								"{@spell guiding bolt}",
+								"{@spell inflict wounds}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell magic weapon}",
+								"{@spell silence}",
+								"{@spell warding wind|xge}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell elemental weapon}",
+								"{@spell protection from energy}",
+								"{@spell sending}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Dragon Fanatic",
+					"entries": [
+						"The dragonvoice has advantage on saving throws against being {@condition charmed} or {@condition frightened}. While the dragonvoice can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonclaw ignores the effects of being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Fanatic Advantage",
+					"entries": [
+						"Once per turn, if the dragonvoice makes a weapon attack with advantage on the attack roll and hits, it deals an extra 10 ({@dice 3d6}) damage"
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The dragonvoice has advantage on an attack roll against a creature if at least one of the dragonvoice's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Limited Flight",
+					"entries": [
+						"The dragonvoice can use a bonus action to gain a flying speed of 30 feet until the end of its turn"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 3 ({@damage 1d6}) fire damage."
+					]
+				},
+				{
+					"name": "Draconic Blessing",
+					"entries": [
+						"Presenting his holy symbol, the dragonvoice can turn himself and an one creature he can see within 60 feet gain resistance against acid, cold, fire, lightning or poison damage, as well as advantage on saving throws against that damage type for 1 minute."
+					]
+				}
+			],
+			"tokenUrl": "saved/img/Dragonvoice.png",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"P",
+				"F"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 5,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Dragonvoice - Seer",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 24",
+				"average": 68
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 16,
+			"int": 12,
+			"wis": 18,
+			"cha": 10,
+			"save": {
+				"wis": "+7",
+				"cha": "+3",
+				"con": "+6"
+			},
+			"skill": {
+				"religion": "+4",
+				"persuasion": "+3",
+				"perception": "+7",
+				"history": "+4"
+			},
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Common, Draconic, Infernal"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The dragonvoice is a 8th-level spellcaster that uses Wisdom as its spellcasting ability (spell save {@dc 15}, +7 to hit with spell attacks). The dragonvoice has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell sacred flame}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|xge}",
+								"{@spell bless}",
+								"{@spell chromatic orb}",
+								"{@spell cure wounds}",
+								"{@spell detect magic}",
+								"{@spell guiding bolt}",
+								"{@spell inflict wounds}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell magic weapon}",
+								"{@spell silence}",
+								"{@spell warding wind|xge}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell elemental weapon}",
+								"{@spell protection from energy}",
+								"{@spell sending}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell divination}",
+								"{@spell elemental bane|xge}",
+								"{@spell guardian of faith}",
+								"{@spell storm sphere|xge}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Dragon Fanatic",
+					"entries": [
+						"The dragonvoice has advantage on saving throws against being {@condition charmed} or {@condition frightened}. While the dragonvoice can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonclaw ignores the effects of being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Fanatic Advantage",
+					"entries": [
+						"Once per turn, if the dragonvoice makes a weapon attack with advantage on the attack roll and hits, it deals an extra 14 ({@dice 4d6}) damage"
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The dragonvoice has advantage on an attack roll against a creature if at least one of the dragonvoice's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Limited Flight",
+					"entries": [
+						"The dragonvoice can use a bonus action to gain a flying speed of 30 feet until the end of its turn"
+					]
+				},
+				{
+					"name": "Empowered Element",
+					"entries": [
+						"Every dragonvoice chooses an element between acid, cold, fire, lightning or poison, gaining resistance to that given type of damage. Each time the dragonvoice hits a creature with a melee weapon attack adds {@dice 1d8} damage of that type (already included) and whenever it deals damage of that type it can choose to reroll up to 4 of those damage dies."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 4 ({@damage 1d8}) elemental damage."
+					]
+				},
+				{
+					"name": "Draconic Blessing",
+					"entries": [
+						"Presenting his holy symbol, the dragonvoice can turn himself and an one creature he can see within 60 feet gain resistance against acid, cold, fire, lightning or poison damage, as well as advantage on saving throws against that damage type for 1 minute."
+					]
+				}
+			],
+			"tokenUrl": "saved/img/Dragonvoice.png",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 5,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Mercenary",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d12 + 10",
+				"average": 42
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"str": "+5",
+				"dex": "+4"
+			},
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+2",
+				"perception": "+3",
+				"survival": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Equipment",
+					"entries": [
+						"Any mercenary wears a {@item shield|PHB} that he can use in battle, gaining a +2 bonus to his armor class if he decides to do so. Alternatively he can combine his {@item longsword|PHB} with a {@item shortsword|PHB} or a {@item handaxe|PHB}, ussing his bonnus action to make and additional attack."
+					]
+				},
+				{
+					"name": "Action Surge (Recharges on a Short or Long Rest)",
+					"entries": [
+						"On his turn, the mercenary can take one additional action."
+					]
+				},
+				{
+					"name": "Distracting Strike",
+					"entries": [
+						"Once per turn, when the mercenary hits a creature with a weapon attack he can add {@dice 1d8} to the damage roll. The next attack roll against the target by an attacker other than the mercenary has advantage if the attack is made before the start of his next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mercenary makes two melee attacks. "
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage or 9 ({@damage 1d10 + 3}) slashing damage if the mercenary is two handing the sword."
+					]
+				},
+				{
+					"name": "Handaxe",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 100/400 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Riposte",
+					"entries": [
+						"When a creature the mercenary can see misses an attack against him he can make a melee weapon attack against that same creature as a reaction, adding {@dice 1d8} to both the attack roll and damage roll of that attack."
+					]
+				}
+			],
+			"tokenUrl": "img/TftYP/Thayan Warrior.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 4,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Dragonlink",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 12",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"skill": {
+				"arcana": "+2",
+				"history": "+2",
+				"perception": "+3",
+				"religion": "+2",
+				"animal handling": "+3"
+			},
+			"senses": [
+				"blindsight 5 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common, Draconic"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The dragonlink is a 5th-level spellcaster that uses Charisma as its spellcasting ability (spell save {@dc 13}, +5 to hit with spell attacks). The dragonlink has the following warlock spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell eldritch blast}",
+								"{@spell green-flame blade|scag}",
+								"{@spell light}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"3": {
+							"spells": [
+								"{@spell darkness}",
+								"{@spell hellish rebuke}",
+								"{@spell mirror image}",
+								"{@spell protection from evil and good}",
+								"{@spell thunder step|xge}",
+								"{@spell witch bolt}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Eldritch Invocations",
+					"entries": [
+						"When the dragonlink casts {@spell eldritch blast}, he adds his Charisma modifier to the damage it deals on a hit. The dragonlink can also cast {@spell detect magic} at will and can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+					]
+				},
+				{
+					"name": "Dragon Fanatic",
+					"entries": [
+						"The dragonlink has advantage on saving throws against being {@condition charmed} or {@condition frightened}. While the dragonvoice can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonclaw ignores the effects of being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Fanatic Advantage",
+					"entries": [
+						"Once per turn, if the dragonlink makes a weapon attack with advantage on the attack roll and hits, it deals an extra 10 ({@dice 3d6}) damage"
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The dragonlink has advantage on an attack roll against a creature if at least one of the dragonvoice's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Limited Flight",
+					"entries": [
+						"The dragonlink can use a bonus action to gain a flying speed of 30 feet until the end of its turn"
+					]
+				},
+				{
+					"name": "Life Link",
+					"entries": [
+						"As a bonus action, the dragonlink can choose a drake he can see at 60 feet creating a link between them. For as long as they are linked whenever the dragonlink is damaged he only recieves half the damage while the other half is dealt to the drake.",
+						"The drake's attack bonus becomes +6 and adds {@dice 1d6} elemental damage to any attack it makes. The damage type depends on the drake's color: fire for red, cold for white, poison for green, acid for black and lightning for blue.",
+						"The drake also gets a breath weapon, equivalent to the one the dragon wyrmling of the same color has.",
+						"The dragonlink can cut this link as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage in melee, or 4 ({@damage 1d4 + 2}) piercing damage at range if it is thrown."
+					]
+				}
+			],
+			"tokenUrl": "saved/img/Dragonvoice.png",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 5,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Half-White Dragon Guard",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d12 + 21",
+				"average": 66
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"str": "+6",
+				"dex": "+4"
+			},
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+3",
+				"perception": "+4",
+				"survival": "+4"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Action Surge (Recharges on a Short or Long Rest)",
+					"entries": [
+						"On his turn, the dragon guard can take one additional action."
+					]
+				},
+				{
+					"name": "Frostbite",
+					"entries": [
+						"When the dragon guard hits a creature with a melee attack it can add 4 ({@damage 1d8}) cold damage to the damage roll (already included)."
+					]
+				},
+				{
+					"name": "Polearm master",
+					"entries": [
+						"The dragon guard's extensive training with the halberd gives him access to some special abilities. Creatures provoke opportunity attacks when they enter this creature's reach, also they provoke opportunity attacks even if they take the Disengage action, and if they are hit by the dragon guard's opportunity attack their speed is becomes 0 for the rest of the turn."
+					]
+				},
+				{
+					"name": "Shaft",
+					"entries": [
+						"If the dragon guard takes the attack action with its halberd it can use a bonus action in order to make an attack with the opposite end of the weapon; this attack uses the same ability modifier as the primary attack, dealing 6 ({@damage 1d4 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon guard makes two melee attacks. "
+					]
+				},
+				{
+					"name": "Halberd",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage plus 4 ({@damage 1d8}) frost damage."
+					]
+				},
+				{
+					"name": "Cold Breath {@recharge 5}",
+					"entries": [
+						"The dragon guard exhales an icy blast of hail in a 15-foot cone. Each creature in that area must make a {@dc 12} Constitution saving throw, taking 22 ({@damage 5d8}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Sentinel",
+					"entries": [
+						"When a creature within 5 feet of the dragon guard makes an attack against another target, the guard can use its reaction to make a melee weapon attack against the attacking creature."
+					]
+				}
+			],
+			"tokenUrl": "saved/img/half_white_dragon_guard.png",
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"S",
+				"C",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"profSave": {
+				"str": 1,
+				"dex": 1
+			},
+			"profSkill": {
+				"athletics": 1,
+				"intimidation": 1,
+				"perception": 1,
+				"survival": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"hpAverageSimple": true,
+				"hpModifier": true,
+				"passivePerception": true
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"profBonus": 2
+		},
+		{
+			"name": "Goblin Shaman",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6",
+				"average": 7
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"stealth": "+4",
+				"nature": "+3",
+				"survival": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "1/2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The goblin shaman is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, +4 to hit with spell attacks). The goblin has the following druid spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell produce flame}",
+								"{@spell thorn whip}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell animal friendship}",
+								"{@spell entangle}",
+								"{@spell fog cloud}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Ninble Escape",
+					"entries": [
+						"The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}3 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "img/KKW/Goblin Gang Member.png",
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"profSave": {},
+			"profSkill": {
+				"stealth": 1,
+				"nature": 1,
+				"survival": 1
+			},
+			"autoCalc": {
+				"hpModifier": true,
+				"hpAverageSimple": false,
+				"passivePerception": true
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Rezmir [NT!]",
+			"isNamedCreature": true,
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-black dragon"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"22 with {@item black dragon mask|HotDQ}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d12 + 68",
+				"average": 178
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 18,
+			"int": 15,
+			"wis": 14,
+			"cha": 20,
+			"save": {
+				"wis": "+6",
+				"cha": "+9",
+				"con": "+8"
+			},
+			"skill": {
+				"stealth": "+8",
+				"religion": "+6",
+				"intimidation": "+9",
+				"perception": "+6",
+				"arcana": "+6"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"acid"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Giant",
+				"Infernal",
+				"Netherese"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Tainted by the Devil",
+					"entries": [
+						"Magical darkness doesn't impede Rezmir's darkvision, also the shadows cover her constantly giving the benefits from the {@spell mage armor} spell."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Rezmir has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Rezmir has the {@item Black Dragon Mask|HotDQ} and {@item Hazirawn|HotDQ}. This weapon is magically linked to the half-dragon, so she uses her Charisma to calculate bot hit and damage with that weapon. Rezmir can, as a bonus action, summon the sword to her hand as long as they are in the same plane."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Rezmir can breathe air and water."
+					]
+				},
+				{
+					"name": "Immolation",
+					"entries": [
+						"When Rezmir is reduced to 0 hit points, her body disintegrates into a pile of ash."
+					]
+				},
+				{
+					"name": "Tulpa [NT!]",
+					"entries": [
+						"A part of Rezmir's soul can manifest as a separated entity called {@creature dragonvoice|customtiamat}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Rezmir can either make two weapon attacks or cast a spell and make a weapon attack (in any order)."
+					]
+				},
+				{
+					"name": "Greatsword (Hazirawn)",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 7}) slashing damage, plus 7 ({@damage 2d6}) necrotic damage. If the target is a creature, it can't regain hit points for 1 minute. The target can make a {@dc 15} Constitution saving throw at the end of each of its turns, ending this effect early on a success."
+					]
+				},
+				{
+					"name": "Acid Breath {@recharge 5}",
+					"entries": [
+						"Rezmir breathes acid in a 30-foot line that is 5 feet wide. Each creature in the line must make a {@dc 16} Dexterity saving throw, taking 53 ({@damage 12d8}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "img/bestiary/HotDQ/Rezmir.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "img/HotDQ/Rezmir.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Amphibious"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"GI",
+				"I",
+				"OTH"
+			],
+			"damageTags": [
+				"S",
+				"N",
+				"A"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {
+				"hpModifier": true,
+				"hpAverageSimple": false,
+				"proficiency": true
+			},
+			"activeTab__input": 4,
+			"activeTab__output": 0,
+			"profBonus": 4
+		},
+		{
+			"name": "Troglodyte Grunt",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"troglodyte"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 10,
+			"cha": 6,
+			"save": {
+				"con": "+4"
+			},
+			"skill": {
+				"survival": "+2",
+				"athletics": "+5",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Troglodyte"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Chameleon Skin",
+					"entries": [
+						"The troglodyte grunt has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"name": "Stench",
+					"entries": [
+						"Any creature other than a troglodyte that starts its turn within 5 feet of the troglodyte grunt must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the troglodyte has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troglodyte makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 3 ({@damage 1d6}) poison damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Poison Shot {@recharge 5}",
+					"entries": [
+						"The troglodyte grunt can spit a sticky poisonous mixture of saliva and mucus, when it does the objective is always the target's head, in order to cause blindness. This works as a regular attack with {@hit 5} to hit and 6 ({@damage 2d6}) poison damage, but the target also has to succeed on a {@dc 13} Dexterity saving throw of be {@condition blinded}. In order to get rid of this condition the target must use an action to remove the substance or succeed on the saving throw at the end of his turn."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "img/bestiary/MM/Troglodyte.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "img/MM/Troglodyte.png",
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"profSave": {
+				"con": 1
+			},
+			"profSkill": {
+				"survival": 1,
+				"athletics": 1,
+				"stealth": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"passivePerception": true,
+				"hpModifier": false,
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"profBonus": 2
+		},
+		{
+			"name": "Drow Guard",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 4",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"save": {
+				"str": "+4",
+				"con": "+3"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow guard’ spellcasting ability is Charisma (spell save {@dc 11}). It can innately cast the following spells, requiring no material components"
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness}",
+							"{@spell faerie fire}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow guard has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the junior drow priestess of lolth has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Martial Advantage",
+					"entries": [
+						"Once per turn, the drow guard can deal an extra 7 ({@dice 2d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the drow guard that isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drow knight makes two melee attacks."
+					]
+				},
+				{
+					"name": "Saber",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage. The target must also succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 hour."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The drow knight adds 2 to its AC against one melee attack that would hit it. To do so, the drow knight must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"tokenUrl": "img/MM/Drow Elite Warrior.png",
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"profSave": {
+				"str": 1,
+				"con": 1
+			},
+			"profSkill": {
+				"perception": 1,
+				"stealth": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"hpModifier": true,
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 4,
+			"activeTab__output": 0,
+			"profBonus": 2
+		},
+		{
+			"name": "Drow Wizard (Evocation)",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"15 with {@spell mage armor}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 16,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"int": "+5",
+				"dex": "+4"
+			},
+			"skill": {
+				"perception": "+2",
+				"arcana": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The drow guard’ spellcasting ability is Charisma (spell save {@dc 11}). It can innately cast the following spells, requiring no material components"
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness}",
+							"{@spell faerie fire}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The drow wizard is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 13}, +5 to hit with spell attacks). The drow has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cause fear|xge}",
+								"{@spell charm person}",
+								"{@spell mage armor}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell invisibility}",
+								"{@spell shatter}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The drow guard has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the junior drow priestess of lolth has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Sculpt Spells",
+					"entries": [
+						"The wizard can create pockets of relative safety within the effects of his evocation spells. When he casts an evocation spell that affects other creatures that he can see, he can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "img/MM/Drow Mage.png",
+			"traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"I",
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"profSave": {
+				"int": 1,
+				"dex": 1
+			},
+			"profSkill": {
+				"perception": 1,
+				"arcana": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"hpModifier": true,
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 4,
+			"activeTab__output": 0,
+			"profBonus": 2
+		},
+		{
+			"name": "Troglodyte Beast",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"troglodyte"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 21",
+				"average": 59
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 6,
+			"wis": 10,
+			"cha": 6,
+			"save": {
+				"con": "+5"
+			},
+			"skill": {
+				"survival": "+2",
+				"athletics": "+6",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Troglodyte"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Chameleon Skin",
+					"entries": [
+						"The troglodyte grunt has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"name": "Stench",
+					"entries": [
+						"Any creature other than a troglodyte that starts its turn within 5 feet of the troglodyte grunt must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the troglodyte has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troglodyte makes two melee attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 3 ({@damage 1d6}) poison damage."
+					]
+				},
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Poison Shot {@recharge 5}",
+					"entries": [
+						"The troglodyte grunt can spit a sticky poisonous mixture of saliva and mucus, when it does the objective is always the target's head, in order to cause blindness. This works as a regular attack with {@hit 5} to hit and 6 ({@damage 2d6}) poison damage, but the target also has to succeed on a {@dc 13} Dexterity saving throw of be {@condition blinded}. In order to get rid of this condition the target must use an action to remove the substance or succeed on the saving throw at the end of his turn."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "img/bestiary/MM/Troglodyte.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "img/MM/Troglodyte.png",
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"profSave": {
+				"con": 1
+			},
+			"profSkill": {
+				"survival": 1,
+				"athletics": 1,
+				"stealth": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"passivePerception": true,
+				"hpModifier": false,
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"profBonus": 2
+		},
+		{
+			"name": "Possessed Statue [NT!]",
+			"source": "CustomTiamat",
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d10 + 85",
+				"average": 178
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 10,
+			"con": 20,
+			"int": 3,
+			"wis": 10,
+			"cha": 1,
+			"save": {
+				"con": "+9",
+				"str": "+10"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"immune": [
+				{
+					"immune": [
+						"poison",
+						"psychic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine"
+				}
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Multiple body",
+					"entries": [
+						"The possessed statue is broken into three main pieces: right arm, left arm and its torso with its head. The torso is the \"main\" part of this monster"
+					]
+				},
+				{
+					"name": "Stench",
+					"entries": [
+						"Any creature other than a troglodyte that starts its turn within 5 feet of the troglodyte grunt must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troglodyte makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 3 ({@damage 1d6}) poison damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Poison Shot {@recharge 5}",
+					"entries": [
+						"The troglodyte grunt can spit a sticky poisonous mixture of saliva and mucus, when it does the objective is always the target's head, in order to cause blindness. This works as a regular attack with {@hit 5} to hit and 6 ({@damage 2d6}) poison damage, but the target also has to succeed on a {@dc 13} Dexterity saving throw of be {@condition blinded}. In order to get rid of this condition the target must use an action to remove the substance or succeed on the saving throw at the end of his turn."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "img/bestiary/MM/Troglodyte.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "img/MM/Troglodyte.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"profSave": {
+				"con": 1
+			},
+			"profSkill": {
+				"survival": 1,
+				"athletics": 1,
+				"stealth": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"passivePerception": true,
+				"hpModifier": false,
+				"hpAverageSimple": false
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"profBonus": 2
+		},
+		{
+			"name": "Rezmir's Shadow",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 27",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 15,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"con": "+6",
+				"cha": "+7",
+				"dex": "+7"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+7",
+				"intimidation": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"cold"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				}
+			],
+			"immune": [
+				"acid",
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Giant",
+				"Infernal",
+				"Netherese"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The shadow's innate spellcasting ability is Charisma (spell save {@dc 15}). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell darkness}",
+						"{@spell invisibility}",
+						"{@spell misty step}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell confusion}"
+						],
+						"3e": [
+							"{@spell fear}",
+							"{@spell shield}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Magical darkness doesn't impede the shadow's darkvision."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The shadow has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The shadow's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the shadow can take the {@action Hide} action as a bonus action."
+					]
+				},
+				{
+					"name": "Dark Advantage",
+					"entries": [
+						"Once per turn, the shadow can deal an extra 10 ({@dice 3d6}) damage when it hits with a weapon attack, provided it has advantage on the attack roll. Any {@creature black abishai} within 60-feet of the shadow gains a +2 bonus to hit with all its attacks and adds {@dice 1d6} damage to its weapon attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shadow can either make two weapon attacks or cast a spell and make a weapon attack (in any order)."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Acid Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales acid in a 20-foot line that is 5 feet wide. Each creature in that line must make a {@dc 15} Dexterity saving throw, taking 27 ({@damage 6d8}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Warp",
+					"entries": [
+						"Whenever en enemy enters the shadow's reach it can immediately cast the {@spell misty step} spell as if was a reaction."
+					]
+				}
+			],
+			"tokenUrl": "img/HotDQ/Rezmir.png",
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"GI",
+				"I",
+				"OTH"
+			],
+			"damageTags": [
+				"S",
+				"A"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"profSave": {},
+			"profSkill": {
+				"stealth": 1,
+				"nature": 1,
+				"survival": 1
+			},
+			"autoCalc": {
+				"hpModifier": true,
+				"hpAverageSimple": false,
+				"passivePerception": true
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Dralmorrer Borngray",
+			"isNamedCreature": true,
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"high elf"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}, {@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 32",
+				"average": 120
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 14,
+			"int": 16,
+			"wis": 12,
+			"cha": 8,
+			"save": {
+				"str": "+7",
+				"con": "+5",
+				"wis": "+4"
+			},
+			"skill": {
+				"perception": "+4",
+				"arcana": "+6",
+				"deception": "+2",
+				"insight": "+4",
+				"religion": "+6"
+			},
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Bullywug",
+				"Draconic",
+				"Elvish",
+				"Goblin",
+				"Sylvan"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Dralmorrer is a 11th-level spellcaster that uses Intelligence as his spellcasting ability (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Dralmorrer has the following spells prepared from the wizard spell list:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell green-flame blade|scag}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell longstrider}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell magic weapon}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Weapon Bond",
+					"entries": [
+						"Provided his longsword is on the same plane Dralmorrer can take a bonus action to teleport it to his hand."
+					]
+				},
+				{
+					"name": "War Magic",
+					"entries": [
+						"When Dralmorrer uses his action to cast a cantrip or a spell, he can also take a bonus action to make one weapon attack"
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Dralmorrer has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep."
+					]
+				},
+				{
+					"name": "Action Surge (Recharges on a Short or Long Rest)",
+					"entries": [
+						"On this turn, Dralmorrer can take one additional action."
+					]
+				},
+				{
+					"name": "Second Wind (Recharges on a Short or Long Rest)",
+					"entries": [
+						"Dralmorrer can, as a bonus action, recover 16 ({@dice 1d10 + 11}) hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dralmorrer makes three attacks with any of his weapons."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Cast a Cantrip",
+					"entries": [
+						"Dralmorrer casts one of his cantrips."
+					]
+				},
+				{
+					"name": "Recover (Costs 2 Actions)",
+					"entries": [
+						"Dralmorrer can use this action even if he can't take actions. Dralmorrer ends a negative condition on himself."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "img/bestiary/HotDQ/Dralmorrer Borngray.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "img/HotDQ/Dralmorrer Borngray.png",
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"OTH",
+				"DR",
+				"E",
+				"GO",
+				"S"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 5,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Pharblex Spattergoo",
+			"isNamedCreature": true,
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"bullywug"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}, {@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 60",
+				"average": 127
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 11,
+			"wis": 18,
+			"cha": 7,
+			"save": {
+				"str": "+6",
+				"con": "+7",
+				"wis": "+7"
+			},
+			"skill": {
+				"nature": "+3",
+				"perception": "+7",
+				"religion": "+3",
+				"stealth": "+5"
+			},
+			"passive": 17,
+			"languages": [
+				"Common",
+				"Bullywug"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Pharblex is a 11th-level spellcaster that uses Wisdom as his spellcasting ability (spell save {@dc 15}, {@hit 7} to hit with spell attacks). Pharblex has the following spells prepared from the druid spell list:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell guidance}",
+								"{@spell poison spray}",
+								"{@spell shape water|xge}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell entangle}",
+								"{@spell healing word}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell barkskin}",
+								"{@spell beast sense}",
+								"{@spell blindness/deafness}",
+								"{@spell spike growth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell gaseous form}",
+								"{@spell plant growth}",
+								"{@spell water walk}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell charm monster|xge}",
+								"{@spell control water}",
+								"{@spell watery sphere|xge}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell contagion}",
+								"{@spell insect plague}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell wall of thorns}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Ninble Escape",
+					"entries": [
+						"Pharblex can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Pharblex can breathe air and water."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"As part of his movement and without a running start, Pharblex can long jump up to 20 feet and high jump up to 10 feet."
+					]
+				},
+				{
+					"name": "Swamp Camouflage",
+					"entries": [
+						"Pharblex has advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+					]
+				},
+				{
+					"name": "Poison Strike (3/Day)",
+					"entries": [
+						"Once per turn, when Pharblex hits with a melee attack, he can expend a use of this trait to deal an extra 9 ({@damage 2d8}) poison damage."
+					]
+				},
+				{
+					"name": "Halo of Spores",
+					"entries": [
+						"Pharblex is surrounded by {@condition invisible}, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature he can see moves into a space within 10 feet of him or starts its turn there, Pharblex can use his reaction to deal {@dice 1d8} necrotic damage to that creature unless it succeeds on a {@dc 15} Constitution saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Pharblex attacks twice. Once with his bite and once with his spear."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 2}) piercing damage plus 8 ({@damage 2d8}) posion damage. The target must then succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} for 1 minute, the target can repeat this saving throw at the end of each of his turns ."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage plus 4 ({@damage 1d8}) posion damage."
+					]
+				},
+				{
+					"name": "Symbiotic Entity (recharges after a short or long rest)",
+					"entries": [
+						"Pharblex awakens his magical spores, gaining 44 temporary hit points for 10 minutes. While he has at least one of those points he rolls the Halo of spones' damage die twice and adds it to the total, his melee attacks also deals an extra 3 ({@damage 1d6}) poison damage."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Poison Spit",
+					"entries": [
+						"Pharblex casts his {@spell poison spray} cantrip."
+					]
+				},
+				{
+					"name": "Goo Slip",
+					"entries": [
+						"Pharblex uses the goo on his feet to slide across the battlefield, he can move up to his walking speed in a straight line without provoking opportunity attacks."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "img/bestiary/HotDQ/Pharblex Spattergoo.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "img/HotDQ/Pharblex Spattergoo.png",
+			"traitTags": [
+				"Amphibious"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"profSave": {},
+			"profSkill": {
+				"stealth": 1,
+				"nature": 1,
+				"survival": 1
+			},
+			"autoCalc": {
+				"hpModifier": true,
+				"hpAverageSimple": false,
+				"passivePerception": true
+			},
+			"activeTab__input": 5,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Langdedrosa Cyanwrath II",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-dragon"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item splint armor +1}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 60",
+				"average": 157
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 18,
+			"int": 10,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"con": "+8",
+				"cha": "+8",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+9",
+				"insight": "+6",
+				"intimidation": "+8",
+				"perception": "+6",
+				"religion": "+4"
+			},
+			"senses": [
+				"blindsight 10 ft., darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"lightning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned"
+			],
+			"languages": [
+				"Common, Draconic"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Langdedrosa is a 12th-level spellcaster. His spellcasting ability is Charisma(spell save {@dc 16}, +8 to hit with spell attacks). Langdedrosa knows the following spells:"
+					],
+					"footerEntries": [
+						"Langdedrosa can use the amulet he carries on his left hand as a spellcasting focus for the spells that require material components. He also can perform somatic components even when he has weapons or a shield in one or both hands, and has advantage on Constitution saving throws that he makes to maintain his concentration on a spells."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell absorb elements|xge}",
+								"{@spell chromatic orb}",
+								"{@spell command}",
+								"{@spell detect magic}",
+								"{@spell shield of faith}",
+								"{@spell thunderous smite}",
+								"{@spell wrathful smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell branding smite}",
+								"{@spell enlarge/reduce}",
+								"{@spell find steed}",
+								"{@spell scorching ray}",
+								"{@spell zone of truth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blinding smite}",
+								"{@spell dispel magic}",
+								"{@spell lightning bolt}",
+								"{@spell revivify}",
+								"{@spell slow}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Improved critical",
+					"entries": [
+						"Langdedrosa's weapon attacks score a critical hit on a roll of 19 or 20."
+					]
+				},
+				{
+					"name": "Action Surge (Recharges on a Short or Long Rest)",
+					"entries": [
+						"On this turn, Langdedrosa can take one additional action."
+					]
+				},
+				{
+					"name": "Living tempest",
+					"entries": [
+						"Any lightning damage Langdedrosa deals ignores damage resistance and treats immunities as resistances."
+					]
+				},
+				{
+					"name": "Aura of protection",
+					"entries": [
+						"Langdedrosa and any creature he chooses within 10 feet of him gains a bonus to any saving throw equal to his Charisma modifier."
+					]
+				},
+				{
+					"name": "Improved divine smite",
+					"entries": [
+						"Whenever Langdedrosa hits a creature with a melee weapon, the creature takes an extra {@dice 2d8} lightning damage (already included). When he hits a creature with a melee weapon attack, he can expend one spell slot to deal lightning damage to the target, in addition to the weapon's damage. The extra damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st, to a maximum of {@dice 5d8}. The damage increases by {@dice 1d8} if the target is an undead or a fiend, to a maximum of {@dice 6d8}."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Langdedrosa's carries a {@item Greatsword|PHB}+2, a {@item Splint Armor|PHB}+1 and a {@item Ring of Protection|DMG}, whose modifiers have already been included on his stats."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Langdedrosa makes two attacks, either with his greatsword or spears."
+					]
+				},
+				{
+					"name": "Greatsword+2",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage plus 9 ({@damage 2d8}) lightning damage. If any damage die rolls 1 or 2 Langdedrosa can reroll it once."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage plus 9 ({@damage 2d8}) lightning damage in melee, or 8 ({@damage 1d6 + 5}) piercing damage at range."
+					]
+				},
+				{
+					"name": "Lightning Breath {@recharge 5}",
+					"entries": [
+						"Langdedrosa exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 55 ({@dice 10d10})  lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Lay on Hands",
+					"entries": [
+						"Langdedrosa has a pool of 60 hit points that replenishes when he takes a long rest. He can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. He also can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands for 5 hit points each. Has no effect on undead or constructs.",
+						"Alternatively once per short or long rest he can spend his bonus action to retrieve 8 ({@dice 1d10 + 3}) hit points."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Langdedrosa adds 4 to its AC against one melee attack from an attacker he can see, then, if the attack misses, he can make a weapon attack against the target with advantage. Langdedrosa can only use this reaction if he is wielding a melee weapon."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Weapon attack",
+					"entries": [
+						"Langdedrosa makes one weapon attack."
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"Langdedrosa makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Static Cast",
+					"entries": [
+						"This action can only be used once per turn. Langdedrosa covers himself with an aura of electricity thats either provides him with 15 temporary hit points or ends a negative condition on himself, he can after that either cast an action spell or make a ranged spell attack of 16 ({@damage 3d10}) lightning damage."
+					]
+				},
+				{
+					"name": "Thunder Dash (Costs 2 Actions)",
+					"entries": [
+						"A veil of electricity covers Langdedrosa, who flashes for a moment and moves in a straight line as if he was a lightning bolt, reappearing on an unoccupied possition no further from 30 feet. Each creature on a possition Langdedrosa went through on his movement must take a {@dc 16} Dexterity saving throw, taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "img/bestiary/HotDQ/Langdedrosa Cyanwrath.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "img/HotDQ/Langdedrosa Cyanwrath.png",
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"S",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"AOE"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 4,
+			"activeTab__output": 0
+		}
+	]
+}
