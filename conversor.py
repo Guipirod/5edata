@@ -14,6 +14,7 @@ with open(FILE_NAME, 'r') as json_file:
     json_data = json.load(json_file)
     for index in range(len(json_data["monster"])):
         # change token path
+        print(">>> NAME", json_data["monster"][index]["name"])
         if "tokenUrl" in json_data["monster"][index].keys():
             token_url = json_data["monster"][index]["tokenUrl"]
             token_name = token_url.split("/")[-1]
