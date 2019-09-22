@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"dateAdded": 1568845246,
+	"dateAdded": 1569178795,
 	"monster": [
 		{
 			"name": "Langdedrosa Cyanwrath",
@@ -439,7 +439,7 @@
 			"activeTab__output": 0
 		},
 		{
-			"name": "Dragonvoice - Seer",
+			"name": "Dragonvoice (Elite)",
 			"source": "CustomTiamat",
 			"size": "M",
 			"type": {
