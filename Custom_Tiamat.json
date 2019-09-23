@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"dateAdded": 1569178795,
+	"dateAdded": 1569275040,
 	"monster": [
 		{
 			"name": "Langdedrosa Cyanwrath",
@@ -936,8 +936,8 @@
 				}
 			],
 			"hp": {
-				"formula": "7d12 + 21",
-				"average": 66
+				"formula": "8d12 + 24",
+				"average": 76
 			},
 			"speed": {
 				"walk": 30
