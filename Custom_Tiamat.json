@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"dateAdded": 1569275040,
+	"dateAdded": 1569363945,
 	"monster": [
 		{
 			"name": "Langdedrosa Cyanwrath",
@@ -1278,7 +1278,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Rezmir has the {@item Black Dragon Mask|HotDQ} and {@item Hazirawn|HotDQ}. This weapon is magically linked to the half-dragon, so she uses her Charisma to calculate bot hit and damage with that weapon. Rezmir can, as a bonus action, summon the sword to her hand as long as they are in the same plane."
+						"Rezmir has an {@item Insignia of Claws|HotDQ}, the {@item Black Dragon Mask|HotDQ} and {@item Hazirawn|HotDQ}. This weapon is magically linked to the half-dragon, so she uses her Charisma to calculate bot hit and damage with that weapon. Rezmir can, as a bonus action, summon the sword to her hand as long as they are in the same plane."
 					]
 				},
 				{
@@ -1294,9 +1294,17 @@
 					]
 				},
 				{
-					"name": "Tulpa [NT!]",
+					"name": "Split Soul",
 					"entries": [
-						"A part of Rezmir's soul can manifest as a separated entity called {@creature dragonvoice|customtiamat}"
+						"A part of Rezmir's soul can manifest as a separated entity, thought which she can see and talk as if it was her {@creature rezmir's shadow|customtiamat|avatar}. That shadow acts on its own initiative and can't really die until Rezmir is destroyed, but it is 'undone' if takes enough damage.",
+						"Rezmir can use her bonus action in order to teleport the shadow or restore it in an available space 5 feet from her, the shadow can exist 100 feet from Rezmir, but in order to move further it needs to control the body of a willing {@creature black abishai|mtf}.",
+						"While this creature is active Rezmir's body casts no shadow."
+					]
+				},
+				{
+					"name": "Dark Advantage",
+					"entries": [
+						"Once per turn, Rezmir can deal an extra 21 ({@dice 6d6}) damage when she hits with a weapon attack, provided Rezmir has advantage on the attack roll or a non-{@condition incapacitated} creature allied with her is 5-feet from the target."
 					]
 				}
 			],
@@ -1304,13 +1312,19 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Rezmir can either make two weapon attacks or cast a spell and make a weapon attack (in any order)."
+						"Rezmir can either make two weapon attacks or cast a spell and make a weapon attack (in any order). She can also replace any weapon attack with a Caustic Bolt."
 					]
 				},
 				{
 					"name": "Greatsword (Hazirawn)",
 					"entries": [
 						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 7}) slashing damage, plus 7 ({@damage 2d6}) necrotic damage. If the target is a creature, it can't regain hit points for 1 minute. The target can make a {@dc 15} Constitution saving throw at the end of each of its turns, ending this effect early on a success."
+					]
+				},
+				{
+					"name": "Caustic Bolt",
+					"entries": [
+						"{@atk rsp} {@hit 9}  to hit, range 90 ft, one target. Hit 22 ({@damage 5d8}) acid damage."
 					]
 				},
 				{
@@ -2287,7 +2301,7 @@
 				{
 					"name": "Dark Advantage",
 					"entries": [
-						"Once per turn, the shadow can deal an extra 10 ({@dice 3d6}) damage when it hits with a weapon attack, provided it has advantage on the attack roll. Any {@creature black abishai} within 60-feet of the shadow gains a +2 bonus to hit with all its attacks and adds {@dice 1d6} damage to its weapon attacks."
+						"Once per turn, the shadow can deal an extra 10 ({@dice 3d6}) damage when it hits with a weapon attack, provided it has advantage on the attack roll. Any {@creature black abishai|mtf} within 60-feet of the shadow gains a +2 bonus to hit with all its attacks and adds {@dice 1d6} damage to its weapon attacks."
 					]
 				}
 			],
