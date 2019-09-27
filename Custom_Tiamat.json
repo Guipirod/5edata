@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"dateAdded": 1569588298,
+	"dateAdded": 1569588568,
 	"monster": [
 		{
 			"name": "Langdedrosa Cyanwrath",
@@ -1194,7 +1194,7 @@
 			"activeTab__output": 0
 		},
 		{
-			"name": "Rezmir [NT!]",
+			"name": "Rezmir",
 			"isNamedCreature": true,
 			"source": "CustomTiamat",
 			"size": "M",
