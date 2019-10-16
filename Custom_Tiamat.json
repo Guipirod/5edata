@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"dateAdded": 1569970618,
+	"dateAdded": 1571236878,
 	"monster": [
 		{
 			"name": "Langdedrosa Cyanwrath",
@@ -1264,9 +1264,9 @@
 			"cr": "10",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Rezmir is a 12th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Whenever Rezmir casts a spell on a creature she is hidden from the creature has disadvantage on the saving throw. She has the following spells prepared:"
+						"Rezmir's innate spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Whenever Rezmir casts a spell on a creature she is hidden from the target has disadvantage on the saving throw. She can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
 						"{@spell darkness}",
@@ -1322,7 +1322,7 @@
 					"name": "Split Soul",
 					"entries": [
 						"A part of Rezmir's soul can manifest as a separated entity, thought which she can see and talk as if it was her {@creature rezmir's shadow|customtiamat|avatar}. That shadow acts on its own initiative and can't really die until Rezmir is destroyed, but it is 'undone' if takes enough damage.",
-						"Rezmir can use her bonus action in order to teleport the shadow or restore it in an available space 5 feet from her, the shadow can exist 100 feet from Rezmir, but in order to move further it needs to control the body of a willing {@creature black abishai|mtf}.",
+						"Rezmir can use her bonus action in order to teleport the shadow or restore it in an available space 5 feet from her, the shadow can exist 100 feet from Rezmir, but in order to move further it needs to control the body of a willing {@creature black abishai|mtf|abishai}.",
 						"While this creature is active Rezmir's body casts no shadow."
 					]
 				},
@@ -1337,7 +1337,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Rezmir can either make two weapon attacks or cast a spell and make a weapon attack (in any order). She can also replace any weapon attack with a Caustic Bolt."
+						"Rezmir can either make two weapon attacks or cast a spell and make a weapon attack (in any order). She can also replace any weapon attack with a Caustic Bolt attack."
 					]
 				},
 				{
@@ -1361,9 +1361,9 @@
 			],
 			"reaction": [
 				{
-					"name": "Uncanny Dodge",
+					"name": "I reject my humanity!",
 					"entries": [
-						"When an attacker Rezmir can see hits her with her attack she can use her reaction to halve the attack's damage against her."
+						"Rezmir can take this reaction even if she has no reactions left this turn. Whenever Rezmir recieves an attack that leaves her with half her hit points or less she can equip the {@item Black Dragon Mask|HotDQ} as long as it is within her items. The mask is instantly attuned to Rezmir."
 					]
 				}
 			],
@@ -1381,9 +1381,9 @@
 					]
 				},
 				{
-					"name": "Darkness (Costs 2 Actions)",
+					"name": "Cast a Spell (Costs 2 Actions)",
 					"entries": [
-						"A 15-foot radius of magical darkness extends from a point Rezmir can see within 60 feet of her and spreads around corners. The darkness lasts as long as Rezmir maintains concentration, up to 1 minute. A creature with darkvision can't see through this darkness, and no natural light can illuminate it. If any of the area overlaps with a area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled."
+						"Rezmir casts one of her at-will spells."
 					]
 				}
 			],
@@ -1421,6 +1421,9 @@
 				"S",
 				"N",
 				"A"
+			],
+			"spellcastingTags": [
+				"I"
 			],
 			"miscTags": [
 				"MW",
@@ -2075,152 +2078,6 @@
 			"profBonus": 2
 		},
 		{
-			"name": "Possessed Statue [NT!]",
-			"source": "CustomTiamat",
-			"size": "L",
-			"type": "construct",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "17d10 + 85",
-				"average": 178
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 22,
-			"dex": 10,
-			"con": 20,
-			"int": 3,
-			"wis": 10,
-			"cha": 1,
-			"save": {
-				"con": "+9",
-				"str": "+10"
-			},
-			"skill": {
-				"athletics": "+10",
-				"perception": "+4"
-			},
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"passive": 14,
-			"immune": [
-				{
-					"immune": [
-						"poison",
-						"psychic"
-					]
-				},
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't adamantine"
-				}
-			],
-			"languages": [
-				"understands the languages of its creator but can't speak"
-			],
-			"cr": "10",
-			"trait": [
-				{
-					"name": "Multiple body",
-					"entries": [
-						"The possessed statue is broken into three main pieces: right arm, left arm and its torso with its head. The torso is the \"main\" part of this monster"
-					]
-				},
-				{
-					"name": "Stench",
-					"entries": [
-						"Any creature other than a troglodyte that starts its turn within 5 feet of the troglodyte grunt must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The troglodyte makes three attacks: one with its bite and two with its claws."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 3 ({@damage 1d6}) poison damage."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
-					]
-				},
-				{
-					"name": "Poison Shot {@recharge 5}",
-					"entries": [
-						"The troglodyte grunt can spit a sticky poisonous mixture of saliva and mucus, when it does the objective is always the target's head, in order to cause blindness. This works as a regular attack with {@hit 5} to hit and 6 ({@damage 2d6}) poison damage, but the target also has to succeed on a {@dc 13} Dexterity saving throw of be {@condition blinded}. In order to get rid of this condition the target must use an action to remove the substance or succeed on the saving throw at the end of his turn."
-					]
-				}
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "img/bestiary/MM/Troglodyte.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "img/MM/Troglodyte.png",
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"I",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"profSave": {
-				"con": 1
-			},
-			"profSkill": {
-				"survival": 1,
-				"athletics": 1,
-				"stealth": 1
-			},
-			"autoCalc": {
-				"proficiency": false,
-				"passivePerception": true,
-				"hpModifier": false,
-				"hpAverageSimple": false
-			},
-			"activeTab__input": 5,
-			"activeTab__output": 0,
-			"profBonus": 2
-		},
-		{
 			"name": "Rezmir's Shadow",
 			"source": "CustomTiamat",
 			"size": "M",
@@ -2354,7 +2211,7 @@
 				{
 					"name": "Dark Advantage",
 					"entries": [
-						"Once per turn, the shadow can deal an extra 10 ({@dice 3d6}) damage when it hits with a weapon attack, provided it has advantage on the attack roll. Any {@creature black abishai|mtf} within 60-feet of the shadow gains a +2 bonus to hit with all its attacks and adds {@dice 1d6} damage to its weapon attacks."
+						"Once per turn, the shadow can deal an extra 10 ({@dice 3d6}) damage when it hits with a weapon attack, provided it has advantage on the attack roll. Any {@creature black abishai|mtf|abishai} within 60-feet of the shadow gains a +2 bonus to hit with all its attacks and adds {@dice 1d6} damage to its weapon attacks."
 					]
 				}
 			],
@@ -2382,7 +2239,7 @@
 				{
 					"name": "Warp",
 					"entries": [
-						"Whenever en enemy enters the shadow's reach it can immediately cast the {@spell misty step} spell as if was a reaction."
+						"Whenever en enemy enters the shadow's reach it can immediately cast the {@spell misty step} spell using no components as part of this reaction."
 					]
 				}
 			],
@@ -2880,266 +2737,6 @@
 				"passivePerception": true
 			},
 			"activeTab__input": 5,
-			"activeTab__output": 0
-		},
-		{
-			"name": "Langdedrosa Cyanwrath II",
-			"isNpc": true,
-			"isNamedCreature": true,
-			"source": "CustomTiamat",
-			"size": "M",
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"half-dragon"
-				]
-			},
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 20,
-					"from": [
-						"{@item splint armor +1}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "15d12 + 60",
-				"average": 157
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 20,
-			"dex": 10,
-			"con": 18,
-			"int": 10,
-			"wis": 14,
-			"cha": 18,
-			"save": {
-				"str": "+9",
-				"con": "+8",
-				"cha": "+8",
-				"wis": "+6"
-			},
-			"skill": {
-				"athletics": "+9",
-				"insight": "+6",
-				"intimidation": "+8",
-				"perception": "+6",
-				"religion": "+4"
-			},
-			"senses": [
-				"blindsight 10 ft., darkvision 60 ft."
-			],
-			"passive": 16,
-			"resist": [
-				"lightning"
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"stunned"
-			],
-			"languages": [
-				"Common, Draconic"
-			],
-			"cr": "9",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Langdedrosa is a 12th-level spellcaster. His spellcasting ability is Charisma(spell save {@dc 16}, +8 to hit with spell attacks). Langdedrosa knows the following spells:"
-					],
-					"footerEntries": [
-						"Langdedrosa can use the amulet he carries on his left hand as a spellcasting focus for the spells that require material components. He also can perform somatic components even when he has weapons or a shield in one or both hands, and has advantage on Constitution saving throws that he makes to maintain his concentration on a spells."
-					],
-					"spells": {
-						"1": {
-							"spells": [
-								"{@spell absorb elements|xge}",
-								"{@spell chromatic orb}",
-								"{@spell command}",
-								"{@spell detect magic}",
-								"{@spell shield of faith}",
-								"{@spell thunderous smite}",
-								"{@spell wrathful smite}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell branding smite}",
-								"{@spell enlarge/reduce}",
-								"{@spell find steed}",
-								"{@spell scorching ray}",
-								"{@spell zone of truth}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell blinding smite}",
-								"{@spell dispel magic}",
-								"{@spell lightning bolt}",
-								"{@spell revivify}",
-								"{@spell slow}"
-							],
-							"slots": 3
-						}
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Improved critical",
-					"entries": [
-						"Langdedrosa's weapon attacks score a critical hit on a roll of 19 or 20."
-					]
-				},
-				{
-					"name": "Action Surge (Recharges on a Short or Long Rest)",
-					"entries": [
-						"On this turn, Langdedrosa can take one additional action."
-					]
-				},
-				{
-					"name": "Living tempest",
-					"entries": [
-						"Any lightning damage Langdedrosa deals ignores damage resistance and treats immunities as resistances."
-					]
-				},
-				{
-					"name": "Aura of protection",
-					"entries": [
-						"Langdedrosa and any creature he chooses within 10 feet of him gains a bonus to any saving throw equal to his Charisma modifier."
-					]
-				},
-				{
-					"name": "Improved divine smite",
-					"entries": [
-						"Whenever Langdedrosa hits a creature with a melee weapon, the creature takes an extra {@dice 2d8} lightning damage (already included). When he hits a creature with a melee weapon attack, he can expend one spell slot to deal lightning damage to the target, in addition to the weapon's damage. The extra damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st, to a maximum of {@dice 5d8}. The damage increases by {@dice 1d8} if the target is an undead or a fiend, to a maximum of {@dice 6d8}."
-					]
-				},
-				{
-					"name": "Special Equipment",
-					"entries": [
-						"Langdedrosa's carries a {@item Greatsword|PHB}+2, a {@item Splint Armor|PHB}+1 and a {@item Ring of Protection|DMG}, whose modifiers have already been included on his stats."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Langdedrosa makes two attacks, either with his greatsword or spears."
-					]
-				},
-				{
-					"name": "Greatsword+2",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage plus 9 ({@damage 2d8}) lightning damage. If any damage die rolls 1 or 2 Langdedrosa can reroll it once."
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage plus 9 ({@damage 2d8}) lightning damage in melee, or 8 ({@damage 1d6 + 5}) piercing damage at range."
-					]
-				},
-				{
-					"name": "Lightning Breath {@recharge 5}",
-					"entries": [
-						"Langdedrosa exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 55 ({@dice 10d10})  lightning damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"name": "Lay on Hands",
-					"entries": [
-						"Langdedrosa has a pool of 60 hit points that replenishes when he takes a long rest. He can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. He also can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands for 5 hit points each. Has no effect on undead or constructs.",
-						"Alternatively once per short or long rest he can spend his bonus action to retrieve 8 ({@dice 1d10 + 3}) hit points."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"Langdedrosa adds 4 to its AC against one melee attack from an attacker he can see, then, if the attack misses, he can make a weapon attack against the target with advantage. Langdedrosa can only use this reaction if he is wielding a melee weapon."
-					]
-				}
-			],
-			"legendaryActions": 3,
-			"legendary": [
-				{
-					"name": "Weapon attack",
-					"entries": [
-						"Langdedrosa makes one weapon attack."
-					]
-				},
-				{
-					"name": "Detect",
-					"entries": [
-						"Langdedrosa makes a Wisdom ({@skill Perception}) check."
-					]
-				},
-				{
-					"name": "Static Cast",
-					"entries": [
-						"This action can only be used once per turn. Langdedrosa covers himself with an aura of electricity thats either provides him with 15 temporary hit points or ends a negative condition on himself, he can after that either cast an action spell or make a ranged spell attack of 16 ({@damage 3d10}) lightning damage."
-					]
-				},
-				{
-					"name": "Thunder Dash (Costs 2 Actions)",
-					"entries": [
-						"A veil of electricity covers Langdedrosa, who flashes for a moment and moves in a straight line as if he was a lightning bolt, reappearing on an unoccupied possition no further from 30 feet. Each creature on a possition Langdedrosa went through on his movement must take a {@dc 16} Dexterity saving throw, taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
-					]
-				}
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "img/bestiary/HotDQ/Langdedrosa Cyanwrath.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "img/HotDQ/Langdedrosa Cyanwrath.png",
-			"senseTags": [
-				"B",
-				"D"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C",
-				"DR"
-			],
-			"damageTags": [
-				"S",
-				"L",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"THW",
-				"AOE"
-			],
-			"profSave": {},
-			"profSkill": {},
-			"autoCalc": {},
-			"activeTab__input": 4,
 			"activeTab__output": 0
 		}
 	]
