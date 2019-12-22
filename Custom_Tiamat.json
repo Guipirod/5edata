@@ -13,10 +13,296 @@
 			}
 		]
 	},
-	"dateAdded": 1571236878,
+	"dateAdded": 1577030675,
 	"monster": [
 		{
 			"name": "Langdedrosa Cyanwrath",
+			"shortName": "Cyanwrath",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-dragon"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item splint armor +1}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 60",
+				"average": 157
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 18,
+			"int": 10,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"con": "+8",
+				"cha": "+8",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+9",
+				"insight": "+6",
+				"intimidation": "+8",
+				"perception": "+6",
+				"religion": "+4"
+			},
+			"senses": [
+				"blindsight 10 ft., darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"lightning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned"
+			],
+			"languages": [
+				"Common, Draconic"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Cyanwrath's innate spellcasting ability is Charisma (spell save {@dc 16}). Cyanwrath can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell detect magic|PHB}",
+						"{@spell lightning bolt|PHB}",
+						"{@spell shield of faith|PHB}",
+						"{@spell thunderwave|PHB} (3d8)"
+					],
+					"daily": {
+						"3e": [
+							"{@spell dispel magic|PHB}",
+							"{@spell slow|PHB}",
+							"{@spell thunder step|XGE}"
+						],
+						"1e": [
+							"{@spell mass healing word|PHB}",
+							"{@spell revivify|PHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Martial Prowess",
+					"entries": [
+						"Cyanwrath's weapon attacks score a critical hit on a 19 or a 20, they also deal one extra die of its damage, already included."
+					]
+				},
+				{
+					"name": "Living tempest",
+					"entries": [
+						"Any lightning damage Cyanwrath deals ignores damage resistance and treats immunities as resistances. Cyanwrath's weapon attacks also deal an additional 4 ({@damage 1d8}) lightning damage, already include."
+					]
+				},
+				{
+					"name": "Aura of protection",
+					"entries": [
+						"Cyanwrath and any creature he chooses within 10 feet of him gains a bonus to any saving throw equal to his Charisma modifier."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Cyanwrath carries a {@item Greatsword|PHB}+2 he calls Stormbringer, a {@item Splint Armor|PHB}+1 and a {@item Ring of Protection|DMG}, whose modifiers have already been included on his stats."
+					]
+				},
+				{
+					"name": "Lightning Smite",
+					"entries": [
+						"Once per combat round, when Cyanwrath hits a creature with a weapon attack, the creature takes 12 ({@damage 3d8}) lightning damage in addition to the attack's damage."
+					]
+				},
+				{
+					"name": "Lay on Hands",
+					"entries": [
+						"Cyanwrath has a pile of 80 hit points he recovers on each long rest. As a bonus action he can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in his pool. He also can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands for 5 hit points each. Has no effect on undead or constructs."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Cyanwrath makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Stormbringer (Greatsword)",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d6 + 7}) slashing damage, plus 4 ({@damage 1d8}) lightning damage."
+					]
+				},
+				{
+					"name": "Halberd",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage, plus 4 ({@damage 1d8}) lightning damage."
+					]
+				},
+				{
+					"name": "Lightning Breath {@recharge 5}",
+					"entries": [
+						"Cyanwrath exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 55 ({@damage 10d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Cyanwrath adds 4 to its AC against one melee attack from an attacker he can see, then, if the attack misses, he can make a weapon attack against the target with advantage. Cyanwrath can only use this reaction if he is wielding a melee weapon."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Weapon attack",
+					"entries": [
+						"Cyanwrath makes one weapon attack without Lightning Smite."
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"Cyanwrath makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Static Cast",
+					"entries": [
+						"Cyanwrath casts one of his innate spells, then the remaining energy generates a shield that provides him 20 temporary hit points. This action cannot be used again until Cyanwrath's next turn."
+					]
+				},
+				{
+					"name": "Thunder Dash (Costs 2 Actions)",
+					"entries": [
+						"A veil of electricity covers Cyanwrath, who flashes for a moment and moves in a straight line as if he was a lightning bolt, reappearing on an unoccupied space no further from 30 feet. Each creature on a possition Cyanwrath went through on his movement must take a {@dc 16} Dexterity saving throw, taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Creature description ",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Boss Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), Cyanwrath takes a boss action to cause one of these effects, in the following order:",
+									{
+										"name": "Action 1",
+										"entries": [
+											""
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Action 2: Reinforcements",
+										"type": "entries",
+										"entries": [
+											""
+										]
+									},
+									{
+										"name": "Action 3",
+										"type": "entries",
+										"entries": [
+											""
+										]
+									},
+									{
+										"name": "Action 4: Punish",
+										"type": "entries",
+										"entries": [
+											""
+										]
+									},
+									{
+										"name": "Action 5: Repeat",
+										"type": "entries",
+										"entries": [
+											""
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "img/bestiary/HotDQ/Langdedrosa Cyanwrath.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "img/HotDQ/Langdedrosa Cyanwrath.png",
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"S",
+				"L"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 4,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Langdedrosa Cyanwrath [BETA]",
+			"shortName": "Cyanwrath",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "CustomTiamat",
@@ -1194,7 +1480,7 @@
 			"activeTab__output": 0
 		},
 		{
-			"name": "Rezmir",
+			"name": "Rezmir [BETA]",
 			"isNamedCreature": true,
 			"source": "CustomTiamat",
 			"size": "M",
@@ -2736,6 +3022,482 @@
 				"hpAverageSimple": false,
 				"passivePerception": true
 			},
+			"activeTab__input": 5,
+			"activeTab__output": 0
+		},
+		{
+			"name": "Rezmir",
+			"isNamedCreature": true,
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-black dragon"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"22 with {@item black dragon mask|HotDQ}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d12 + 68",
+				"average": 178
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 18,
+			"int": 15,
+			"wis": 14,
+			"cha": 20,
+			"save": {
+				"wis": "+6",
+				"cha": "+9",
+				"con": "+8"
+			},
+			"skill": {
+				"stealth": "+12",
+				"religion": "+10",
+				"intimidation": "+13",
+				"perception": "+10",
+				"arcana": "+6"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				"acid"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Giant",
+				"Infernal",
+				"Netherese"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Rezmir's innate spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Whenever Rezmir casts a spell on a creature she is hidden from the target has disadvantage on the saving throw. She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell darkness}",
+						"{@spell invisibility}",
+						"{@spell misty step}",
+						"{@spell zephyr strike|XGE}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell fear}",
+							"{@spell melf's acid arrow|PHB} (4th level)",
+							"{@spell shield}"
+						],
+						"1e": [
+							"{@spell confusion}",
+							"{@spell greater invisibility|PHB}",
+							"{@spell scrying}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Tainted by the Devil",
+					"entries": [
+						"Magical darkness doesn't impede Rezmir's darkvision, also the shadows cover her constantly giving the benefits from the {@spell mage armor} spell."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Rezmir has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Rezmir has an {@item Insignia of Claws|HotDQ}, the {@item Black Dragon Mask|HotDQ} and {@item Hazirawn|HotDQ}. This weapon is magically linked to the half-dragon, so she uses her Charisma to calculate bot hit and damage with that weapon. Rezmir can, as a bonus action, summon the sword to her hand as long as they are in the same plane."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Rezmir can breathe air and water."
+					]
+				},
+				{
+					"name": "Immolation",
+					"entries": [
+						"When Rezmir is reduced to 0 hit points, her body disintegrates into a pile of ash."
+					]
+				},
+				{
+					"name": "Split Soul",
+					"entries": [
+						"A part of Rezmir's soul can manifest as a separated entity, thought which she can see and talk as if it was her {@creature rezmir's shadow|customtiamat|avatar}. That shadow acts on its own initiative and can't really die until Rezmir is destroyed, but it is 'undone' if takes enough damage.",
+						"Rezmir can use her bonus action in order to teleport the shadow or restore it in an available space 5 feet from her, the shadow can exist 100 feet from Rezmir, but in order to move further away it needs to control the body of a willing {@creature black abishai|mtf|abishai}.",
+						"While this creature is active Rezmir's body casts no shadow."
+					]
+				},
+				{
+					"name": "Dark Advantage",
+					"entries": [
+						"Once per turn, Rezmir can deal an extra 10 ({@dice 3d6}) damage when she hits with a weapon attack, provided Rezmir has advantage on the attack roll or a non-{@condition incapacitated} creature allied with her is 5-feet from the target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Rezmir can either make two weapon attacks or cast a spell and make a weapon attack (in any order). She can also replace any weapon attack with a Caustic Bolt attack. When Rezmir is wearing the {@item Black Dragon Mask|HotDQ} she can make three melee weapon attacks, teleporting up to 30 feet to an unocupied space she can see before each individual strike."
+					]
+				},
+				{
+					"name": "Greatsword (Hazirawn)",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 7}) slashing damage, plus 7 ({@damage 2d6}) necrotic damage. If the target is a creature, it can't regain hit points for 1 minute. The target can make a {@dc 15} Constitution saving throw at the end of each of its turns, ending this effect early on a success."
+					]
+				},
+				{
+					"name": "Caustic Bolt",
+					"entries": [
+						"{@atk rsp} {@hit 9}  to hit, range 90 ft, one target. Hit 22 ({@damage 5d8}) acid damage."
+					]
+				},
+				{
+					"name": "Acid Breath {@recharge 5}",
+					"entries": [
+						"Rezmir breathes acid in a 30-foot line that is 5 feet wide. Each creature in the line must make a {@dc 16} Dexterity saving throw, taking 53 ({@damage 12d8}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "I reject my humanity!",
+					"entries": [
+						"Rezmir can take this reaction even if she has no reactions left this turn. Whenever Rezmir recieves an attack that leaves her with half her hit points or less she can equip the {@item Black Dragon Mask|HotDQ} as long as it is within her items. The mask is instantly attuned to Rezmir."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Weapon Attack",
+					"entries": [
+						"Rezmir makes one weapon attack or fires a Caustic Bolt. This attack can't benefit from her Dark Advantage ability."
+					]
+				},
+				{
+					"name": "Hide",
+					"entries": [
+						"Rezmir takes the {@action Hide} action, she can then move up to 20 feet."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 2 Actions)",
+					"entries": [
+						"Rezmir casts one of her at-will spells."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Creature description ",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Boss Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), Rezmir takes a boss action to cause one of these effects, in the following order:",
+									{
+										"name": "Action 1",
+										"entries": [
+											"Rezmir casts {@spell wall of force} using no components and tries to divide the field separating her enemies. Rezmir's {@creature rezmir's shadow|customtiamat|avatar} inmediately appears in the other side of the wall. Rezmir doesn't need to keep concentration on the spell, but killing her avatar will inmediately destroy it."
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Action 2: Reinforcements",
+										"type": "entries",
+										"entries": [
+											"Rezmir summons two {@creature black abishai|mtf} on empty spaces within 60 feet of her. If the wall is still active she will try to protect her avatar."
+										]
+									},
+									{
+										"name": "Action 3",
+										"type": "entries",
+										"entries": [
+											"Rezmir casts {@spell greater invisibility} on herself. The spell lasts until iniciative count 20 of the next round."
+										]
+									},
+									{
+										"name": "Action 4: Punish",
+										"type": "entries",
+										"entries": [
+											"Rezmir targets an abishai she summoned or her own avatar, making the creature explode. Each creature in a 20-foot-radius sphere centred in that point must make a Dexterity saving throw. A target takes 28 ({@damage 8d6}) necrotic damage on a failed save, or half as much on a successful one."
+										]
+									},
+									{
+										"name": "Action 5: Repeat",
+										"type": "entries",
+										"entries": [
+											"If Rezmir is still alive she will take the 2 and 4 boss actions from this point on. Rezmir can never have more than 2 black abishai summoned with her boss actions, so if one is alive she will only summon one, or not take the action 2 if she already has two active abishai."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "img/bestiary/HotDQ/Rezmir.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "img/HotDQ/Rezmir.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Amphibious"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"GI",
+				"I",
+				"OTH"
+			],
+			"damageTags": [
+				"S",
+				"N",
+				"A"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {
+				"hpModifier": true,
+				"hpAverageSimple": false,
+				"proficiency": true
+			},
+			"activeTab__input": 4,
+			"activeTab__output": 0,
+			"profBonus": 4
+		},
+		{
+			"name": "Severin Silrajin [NF!]",
+			"shortName": "Severin",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				22
+			],
+			"hp": {
+				"formula": "28d10 + 112",
+				"average": 266
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 10,
+			"dex": 22,
+			"con": 18,
+			"int": 18,
+			"wis": 16,
+			"cha": 22,
+			"save": {
+				"dex": "+12",
+				"con": "+10",
+				"wis": "+9",
+				"cha": "+12"
+			},
+			"skill": {
+				"perception": "+15",
+				"arcana": "+16",
+				"insight": "+15",
+				"persuasion": "+18",
+				"religion": "+10"
+			},
+			"senses": [
+				"truesight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 25,
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"stunned"
+			],
+			"languages": [
+				"Alzhedo",
+				"Common",
+				"Draconic",
+				"Infernal"
+			],
+			"cr": "19",
+			"trait": [
+				{
+					"name": "Draconic Majesty",
+					"entries": [
+						"Severin adds his Charisma bonus to his AC (included)."
+					]
+				},
+				{
+					"name": "Arms of the Astral Self",
+					"entries": [
+						"Severin fights by summoning up to six spectral arms that hover over his shoulders, giving him the appereance of a religious image. All attacks made by this arms are considered magical."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the Severin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the Severin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Magical darkness doesn't impede the Severin's darkvision."
+					]
+				},
+				{
+					"name": "The eyes of the future",
+					"entries": [
+						"Severin sees reality as an almost endless tree of possible futures. As a result of this gift, he is always under the effect of a {@spell foresight} spell, and guides his decissions using the prophetic visions he dreams."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Severin makes four spectral arm attacks."
+					]
+				},
+				{
+					"name": "Spectral Arms",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d8 + 6}) radiant damage. If the target is a creature, Severin can choose one of the following additional effects:",
+						"The target must succeed on a {@dc 20} Strength saving throw or drop one item it is holding (Severin's choice).",
+						"The target must succeed on a {@dc 20} Dexterity saving throw or be knocked {@condition prone}.",
+						"The target must succeed on a {@dc 20} Constitution saving throw or be {@condition stunned} until the end of Severin's next turn."
+					]
+				},
+				{
+					"name": "Thousand Hands {@recharge 5}",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one creature. {@h} The target must make a {@dc 20} Constitution saving throw. On a failed save, the target is reduced to 0 hit points. On a successful save, the target takes 55 ({@damage 10d10}) necrotic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Precognition",
+					"entries": [
+						"If Severin is hit by an attack or fails a saving throw he can use his reaction in order to choose a destiny path in which he doesn't. Severin ignores damage and effects dealt by the triggering effect."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Severin makes one attack with his spectral arms."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "http://localhost/img/bestiary/RoT/Severin.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "localhost/img/RoT/Severin.png",
+			"traitTags": [
+				"Devil's Sight"
+			],
+			"senseTags": [
+				"U",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I"
+			],
+			"damageTags": [
+				"R",
+				"N"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
 			"activeTab__input": 5,
 			"activeTab__output": 0
 		}
