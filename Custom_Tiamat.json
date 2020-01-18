@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"dateAdded": 1579215711,
+	"dateAdded": 1579304060,
 	"monster": [
 		{
 			"name": "Half-Blue Dragon Paladin",
@@ -137,7 +137,6 @@
 					]
 				}
 			],
-			"tokenUrl": "saved/img/half_blue_dragon_paladin.png",
 			"traitTags": [
 				"Brute"
 			],
@@ -322,7 +321,6 @@
 					]
 				}
 			],
-			"tokenUrl": "saved/img/half_green_dragon_01.png",
 			"traitTags": [
 				"Sneak Attack"
 			],
@@ -1245,7 +1243,7 @@
 					]
 				}
 			],
-			"tokenUrl": "saved/img/half_blue_dragon_sorcerer.png",
+			"tokenUrl": "saved/img/half_white_dragon_guard.png",
 			"senseTags": [
 				"B",
 				"D"
@@ -2137,6 +2135,7 @@
 		},
 		{
 			"name": "Langdedrosa Cyanwrath",
+			"shortName": "Cyanwrath",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "CustomTiamat",
@@ -2200,49 +2199,29 @@
 			"languages": [
 				"Common, Draconic"
 			],
-			"cr": "9",
+			"cr": "10",
 			"spellcasting": [
 				{
-					"name": "Spellcasting",
+					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"Langdedrosa is a 12th-level spellcaster. His spellcasting ability is Charisma(spell save {@dc 16}, +8 to hit with spell attacks). Langdedrosa knows the following spells:"
+						"Cyanwrath's innate spellcasting ability is Charisma (spell save {@dc 16}). Cyanwrath can innately cast the following spells, requiring no material components:"
 					],
-					"footerEntries": [
-						"Langdedrosa can use the amulet he carries on his left hand as a spellcasting focus for the spells that require material components. He also can perform somatic components even when he has weapons or a shield in one or both hands, and has advantage on Constitution saving throws that he makes to maintain his concentration on a spells."
+					"will": [
+						"{@spell detect magic|PHB}",
+						"{@spell lightning bolt|PHB}",
+						"{@spell shield of faith|PHB}",
+						"{@spell thunderwave|PHB}"
 					],
-					"spells": {
-						"1": {
-							"spells": [
-								"{@spell absorb elements|xge}",
-								"{@spell chromatic orb}",
-								"{@spell command}",
-								"{@spell detect magic}",
-								"{@spell shield of faith}",
-								"{@spell thunderous smite}",
-								"{@spell wrathful smite}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell branding smite}",
-								"{@spell enlarge/reduce}",
-								"{@spell find steed}",
-								"{@spell scorching ray}",
-								"{@spell zone of truth}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell blinding smite}",
-								"{@spell dispel magic}",
-								"{@spell lightning bolt}",
-								"{@spell revivify}",
-								"{@spell slow}"
-							],
-							"slots": 3
-						}
+					"daily": {
+						"3e": [
+							"{@spell dispel magic|PHB}",
+							"{@spell slow|PHB}",
+							"{@spell thunder step|XGE}"
+						],
+						"1e": [
+							"{@spell mass healing word|PHB}",
+							"{@spell revivify|PHB}"
+						]
 					},
 					"ability": "cha",
 					"type": "spellcasting"
@@ -2250,39 +2229,39 @@
 			],
 			"trait": [
 				{
-					"name": "Improved critical",
+					"name": "Martial Prowess",
 					"entries": [
-						"Langdedrosa's weapon attacks score a critical hit on a roll of 19 or 20."
-					]
-				},
-				{
-					"name": "Action Surge (Recharges on a Short or Long Rest)",
-					"entries": [
-						"On this turn, Langdedrosa can take one additional action."
+						"Cyanwrath's weapon attacks score a critical hit on a 19 or a 20, they also deal one extra die of its damage, already included."
 					]
 				},
 				{
 					"name": "Living tempest",
 					"entries": [
-						"Any lightning damage Langdedrosa deals ignores damage resistance and treats immunities as resistances."
+						"Any lightning damage Cyanwrath deals ignores damage resistance and treats immunities as resistances. Cyanwrath's weapon attacks also deal an additional 4 ({@damage 1d8}) lightning damage, already include."
 					]
 				},
 				{
 					"name": "Aura of protection",
 					"entries": [
-						"Langdedrosa and any creature he chooses within 10 feet of him gains a bonus to any saving throw equal to his Charisma modifier."
-					]
-				},
-				{
-					"name": "Improved divine smite",
-					"entries": [
-						"Whenever Langdedrosa hits a creature with a melee weapon, the creature takes an extra {@dice 1d8} lightning damage (already included). When he hits a creature with a melee weapon attack, he can expend one spell slot to deal lightning damage to the target, in addition to the weapon's damage. The extra damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st, to a maximum of {@dice 5d8}. The damage increases by {@dice 1d8} if the target is an undead or a fiend, to a maximum of {@dice 6d8}."
+						"Cyanwrath and any creature he chooses within 10 feet of him gains a bonus to any saving throw equal to his Charisma modifier."
 					]
 				},
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Langdedrosa's carries a {@item Greatsword|PHB}+2, a {@item Splint Armor|PHB}+1 and a {@item Ring of Protection|DMG}, whose modifiers have already been included on his stats."
+						"Cyanwrath carries a {@item Greatsword|PHB}+2 he calls Stormbringer, a {@item Splint Armor|PHB}+1 and a {@item Ring of Protection|DMG}, whose modifiers have already been included on his stats."
+					]
+				},
+				{
+					"name": "Lightning Smite",
+					"entries": [
+						"Once per combat round, when Cyanwrath hits a creature with a weapon attack, the creature takes 12 ({@damage 3d8}) lightning damage in addition to the attack's damage."
+					]
+				},
+				{
+					"name": "Lay on Hands",
+					"entries": [
+						"Cyanwrath has a pile of 80 hit points he recovers on each long rest. As a bonus action he can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in his pool. He also can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands for 5 hit points each. Has no effect on undead or constructs."
 					]
 				}
 			],
@@ -2290,40 +2269,33 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"Langdedrosa makes two attacks, either with his greatsword or spears."
+						"Cyanwrath makes two melee weapon attacks."
 					]
 				},
 				{
-					"name": "Greatsword+2",
+					"name": "Stormbringer (Greatsword)",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage plus 4 ({@damage 1d8}) lightning damage. If any damage die rolls 1 or 2 Langdedrosa can reroll it once."
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d6 + 7}) slashing damage, plus 4 ({@damage 1d8}) lightning damage."
 					]
 				},
 				{
-					"name": "Spear",
+					"name": "Halberd",
 					"entries": [
-						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage plus 4 ({@damage 1d8}) lightning damage in melee, or 8 ({@damage 1d6 + 5}) piercing damage at range."
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) slashing damage, plus 4 ({@damage 1d8}) lightning damage."
 					]
 				},
 				{
 					"name": "Lightning Breath {@recharge 5}",
 					"entries": [
-						"Langdedrosa exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 55 ({@dice 10d10})  lightning damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"name": "Lay on Hands",
-					"entries": [
-						"Langdedrosa has a pool of 60 hit points that replenishes when he takes a long rest. He can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. He also can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands for 5 hit points each. Has no effect on undead or constructs.",
-						"Alternatively once per short or long rest he can spend his bonus action to retrieve 8 ({@dice 1d10 + 3}) hit points."
+						"Cyanwrath exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 55 ({@damage 10d10}) lightning damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
 			"reaction": [
 				{
-					"name": "Parry",
+					"name": "Riposte",
 					"entries": [
-						"Langdedrosa adds 4 to its AC against one melee attack from an attacker he can see, then, if the attack misses, he can make a weapon attack against the target with advantage. Langdedrosa can only use this reaction if he is wielding a melee weapon."
+						"Cyanwrath adds 4 to its AC against one melee attack from an attacker he can see, then, if the attack misses, he can make a weapon attack against the target with advantage. Cyanwrath can only use this reaction if he is wielding a melee weapon."
 					]
 				}
 			],
@@ -2332,25 +2304,25 @@
 				{
 					"name": "Weapon attack",
 					"entries": [
-						"Langdedrosa makes one weapon attack."
+						"Cyanwrath makes one weapon attack without Lightning Smite."
 					]
 				},
 				{
 					"name": "Detect",
 					"entries": [
-						"Langdedrosa makes a Wisdom ({@skill Perception}) check."
+						"Cyanwrath makes a Wisdom ({@skill Perception}) check."
 					]
 				},
 				{
 					"name": "Static Cast",
 					"entries": [
-						"This action can only be used once per turn. Langdedrosa covers himself with an aura of electricity thats either provides him with 15 temporary hit points or ends a negative condition on himself, he can after that either cast an action spell or make a ranged spell attack of 11 ({@damage 2d10}) lightning damage."
+						"Cyanwrath casts one of his innate spells, then the remaining energy generates a shield that provides him 20 temporary hit points. This action cannot be used again until Cyanwrath's next turn."
 					]
 				},
 				{
 					"name": "Thunder Dash (Costs 2 Actions)",
 					"entries": [
-						"A veil of electricity covers Langdedrosa, who flashes for a moment and moves in a straight line as if he was a lightning bolt, reappearing on an unoccupied possition no further from 30 feet. Each creature on a possition Langdedrosa went through on his movement must take a {@dc 16} Dexterity saving throw, taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
+						"A veil of electricity covers Cyanwrath, who flashes for a moment and moves in a straight line as if he was a lightning bolt, reappearing on an unoccupied space no further from 30 feet. Each creature on a possition Cyanwrath went through on his movement must take a {@dc 16} Dexterity saving throw, taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
@@ -2371,8 +2343,7 @@
 				"D"
 			],
 			"actionTags": [
-				"Multiattack",
-				"Parry"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -2380,13 +2351,14 @@
 			],
 			"damageTags": [
 				"S",
-				"L",
-				"P"
+				"L"
+			],
+			"spellcastingTags": [
+				"I"
 			],
 			"miscTags": [
 				"MW",
-				"RW",
-				"THW",
+				"RCH",
 				"AOE"
 			],
 			"profSave": {},
@@ -2884,7 +2856,7 @@
 			"activeTab__output": 0
 		},
 		{
-			"name": "Dragonlink",
+			"name": "Dragonlink [NF!]",
 			"source": "CustomTiamat",
 			"size": "M",
 			"type": {
@@ -5022,7 +4994,6 @@
 					]
 				}
 			],
-			"tokenUrl": "saved/img/half_green_dragon_01.png",
 			"traitTags": [
 				"Magic Weapons"
 			],
