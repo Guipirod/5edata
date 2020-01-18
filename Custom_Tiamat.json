@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"dateAdded": 1579350441,
+	"dateAdded": 1579351513,
 	"monster": [
 		{
 			"name": "Half-Blue Dragon Paladin",
@@ -137,6 +137,7 @@
 					]
 				}
 			],
+			"tokenUrl": "saved/img/half_blue_dragon_paladin.png",
 			"traitTags": [
 				"Brute"
 			],
@@ -321,6 +322,7 @@
 					]
 				}
 			],
+			"tokenUrl": "saved/img/half_green_dragon_01.png",
 			"traitTags": [
 				"Sneak Attack"
 			],
@@ -630,7 +632,8 @@
 			"activeTab__output": 0
 		},
 		{
-			"name": "Rezmir [BETA]",
+			"name": "Rezmir",
+			"shortName": "Rezmir",
 			"isNpc": true,
 			"isNamedCreature": true,
 			"source": "CustomTiamat",
@@ -1296,7 +1299,7 @@
 					]
 				}
 			],
-			"tokenUrl": "saved/img/half_white_dragon_guard.png",
+			"tokenUrl": "saved/img/half_blue_dragon_sorcerer.png",
 			"senseTags": [
 				"B",
 				"D"
@@ -3353,253 +3356,6 @@
 			"activeTab__output": 0
 		},
 		{
-			"name": "Rezmir",
-			"isNamedCreature": true,
-			"source": "CustomTiamat",
-			"size": "M",
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"half-black dragon"
-				]
-			},
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"22 with {@item black dragon mask|HotDQ}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "17d12 + 68",
-				"average": 178
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 16,
-			"dex": 18,
-			"con": 18,
-			"int": 15,
-			"wis": 14,
-			"cha": 20,
-			"save": {
-				"wis": "+6",
-				"cha": "+9",
-				"con": "+8"
-			},
-			"skill": {
-				"stealth": "+12",
-				"religion": "+10",
-				"intimidation": "+13",
-				"perception": "+10",
-				"arcana": "+6"
-			},
-			"senses": [
-				"blindsight 10 ft.",
-				"darkvision 120 ft."
-			],
-			"passive": 20,
-			"resist": [
-				"acid"
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"stunned"
-			],
-			"languages": [
-				"Common",
-				"Draconic",
-				"Giant",
-				"Infernal",
-				"Netherese"
-			],
-			"cr": "10",
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"Rezmir's innate spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Whenever Rezmir casts a spell on a creature she is hidden from the target has disadvantage on the saving throw. She can innately cast the following spells, requiring no material components:"
-					],
-					"will": [
-						"{@spell darkness}",
-						"{@spell invisibility}",
-						"{@spell misty step}"
-					],
-					"daily": {
-						"3e": [
-							"{@spell fear}",
-							"{@spell shield}"
-						],
-						"1e": [
-							"{@spell confusion}",
-							"{@spell scrying}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Tainted by the Devil",
-					"entries": [
-						"Magical darkness doesn't impede Rezmir's darkvision, also the shadows cover her constantly giving the benefits from the {@spell mage armor} spell."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"Rezmir has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Special Equipment",
-					"entries": [
-						"Rezmir has an {@item Insignia of Claws|HotDQ}, the {@item Black Dragon Mask|HotDQ} and {@item Hazirawn|HotDQ}. This weapon is magically linked to the half-dragon, so she uses her Charisma to calculate bot hit and damage with that weapon. Rezmir can, as a bonus action, summon the sword to her hand as long as they are in the same plane."
-					]
-				},
-				{
-					"name": "Amphibious",
-					"entries": [
-						"Rezmir can breathe air and water."
-					]
-				},
-				{
-					"name": "Immolation",
-					"entries": [
-						"When Rezmir is reduced to 0 hit points, her body disintegrates into a pile of ash."
-					]
-				},
-				{
-					"name": "Split Soul",
-					"entries": [
-						"A part of Rezmir's soul can manifest as a separated entity, thought which she can see and talk as if it was her {@creature rezmir's shadow|customtiamat|avatar}. That shadow acts on its own initiative and can't really die until Rezmir is destroyed, but it is 'undone' if takes enough damage.",
-						"Rezmir can use her bonus action in order to teleport the shadow or restore it in an available space 5 feet from her, the shadow can exist 100 feet from Rezmir, but in order to move further it needs to control the body of a willing {@creature black abishai|mtf|abishai}.",
-						"While this creature is active Rezmir's body casts no shadow."
-					]
-				},
-				{
-					"name": "Dark Advantage",
-					"entries": [
-						"Once per turn, Rezmir can deal an extra 18 ({@dice 5d6}) damage when she hits with a weapon attack, provided Rezmir has advantage on the attack roll or a non-{@condition incapacitated} creature allied with her is 5-feet from the target."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Rezmir can either make two weapon attacks or cast a spell and make a weapon attack (in any order). She can also replace any weapon attack with a Caustic Bolt attack."
-					]
-				},
-				{
-					"name": "Greatsword (Hazirawn)",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 7}) slashing damage, plus 7 ({@damage 2d6}) necrotic damage. If the target is a creature, it can't regain hit points for 1 minute. The target can make a {@dc 15} Constitution saving throw at the end of each of its turns, ending this effect early on a success."
-					]
-				},
-				{
-					"name": "Caustic Bolt",
-					"entries": [
-						"{@atk rsp} {@hit 9}  to hit, range 90 ft, one target. Hit 22 ({@damage 5d8}) acid damage."
-					]
-				},
-				{
-					"name": "Acid Breath {@recharge 5}",
-					"entries": [
-						"Rezmir breathes acid in a 30-foot line that is 5 feet wide. Each creature in the line must make a {@dc 16} Dexterity saving throw, taking 53 ({@damage 12d8}) acid damage on a failed save, or half as much damage on a successful one."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "I reject my humanity!",
-					"entries": [
-						"Rezmir can take this reaction even if she has no reactions left this turn. Whenever Rezmir recieves an attack that leaves her with half her hit points or less she can equip the {@item Black Dragon Mask|HotDQ} as long as it is within her items. The mask is instantly attuned to Rezmir."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Weapon Attack",
-					"entries": [
-						"Rezmir makes one weapon attack."
-					]
-				},
-				{
-					"name": "Hide",
-					"entries": [
-						"Rezmir takes the {@action Hide} action, she can then move up to 10 feet."
-					]
-				},
-				{
-					"name": "Cast a Spell (Costs 2 Actions)",
-					"entries": [
-						"Rezmir casts one of her at-will spells."
-					]
-				}
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "img/bestiary/HotDQ/Rezmir.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "img/HotDQ/Rezmir.png",
-			"traitTags": [
-				"Magic Resistance",
-				"Amphibious"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"DR",
-				"GI",
-				"I",
-				"OTH"
-			],
-			"damageTags": [
-				"S",
-				"N",
-				"A"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MW",
-				"AOE"
-			],
-			"profSave": {},
-			"profSkill": {},
-			"autoCalc": {
-				"hpModifier": true,
-				"hpAverageSimple": false,
-				"proficiency": true
-			},
-			"activeTab__input": 4,
-			"activeTab__output": 0,
-			"profBonus": 4
-		},
-		{
 			"name": "Troglodyte Grunt",
 			"source": "CustomTiamat",
 			"size": "M",
@@ -5047,6 +4803,7 @@
 					]
 				}
 			],
+			"tokenUrl": "saved/img/half_green_dragon_01.png",
 			"traitTags": [
 				"Magic Weapons"
 			],
