@@ -13,7 +13,7 @@
 			}
 		]
 	},
-	"dateAdded": 1581786040,
+	"dateAdded": 1581852594,
 	"monster": [
 		{
 			"name": "Rezmir [BETA]",
@@ -1404,9 +1404,9 @@
 			],
 			"reaction": [
 				{
-					"name": "Parry",
+					"name": "Uncanny Dodge",
 					"entries": [
-						"The half-dragon adds 3 to its AC against one melee attack that would hit it. To do so, the half-dragon must see the attacker and be wielding a melee weapon."
+						"When an attacker the half-dragon can see hits it with an attack, it can use its reaction to halve the damage taken."
 					]
 				}
 			],
@@ -1419,8 +1419,7 @@
 				"D"
 			],
 			"actionTags": [
-				"Multiattack",
-				"Parry"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
