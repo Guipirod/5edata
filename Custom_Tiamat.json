@@ -12,8 +12,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1584891007,
-		"dateLastModified": 1584891007
+		"dateAdded": 1585181499,
+		"dateLastModified": 1585181499
 	},
 	"monster": [
 		{
@@ -142,7 +142,7 @@
 					"entries": [
 						"Red wizard evokers speciallize in the evocation magic school, sacrificing their ability to cast illusion and enchantment spells in the process. In exchange they gain the following benefits:",
 						"Each time the red wizard casts a 1st level or higher evocation spell it gains the benefit of being casted one level higher.",
-						"Evocation cantrips add the red wizard's Intelligence modifier to its damage.",
+						"Evocation spells add the red wizard's Intelligence modifier to its damage.",
 						"The red wizard has a +1 bonus to hit and save DC of its evocation spells."
 					]
 				},
@@ -186,7 +186,7 @@
 			"autoCalc": {},
 			"activeTab__input": 5,
 			"activeTab__output": 0,
-			"uniqueId": "8539874757f52f649be9a84641371975"
+			"uniqueId": "9a1d8c0807f9d52cc6140c3ef9a1b96f"
 		},
 		{
 			"name": "Rezmir [BETA]",
@@ -7129,7 +7129,7 @@
 					]
 				}
 			],
-			"tokenUrl": "https://5e.tools/img/RoT/Varram.png?v=1.101.3",
+			"tokenUrl": "https://5e.tools/img/RoT/Varram.png",
 			"actionTags": [
 				"Multiattack"
 			],
@@ -7165,7 +7165,7 @@
 			"activeTab__input": 5,
 			"activeTab__output": 0,
 			"profBonus": 2,
-			"uniqueId": "1556581ad74ee9216f4126774b28078a"
+			"uniqueId": "a791351c48e6c440fd7495ba50c3f29e"
 		},
 		{
 			"name": "Tiamat [NF!]",
@@ -7478,6 +7478,185 @@
 			"activeTab__output": 0,
 			"profBonus": 2,
 			"uniqueId": "c5d11b0e0f1ad0ab3591ba93735c13c2"
+		},
+		{
+			"name": "Red Wizard Transmuter",
+			"shortName": "red wizard transmuter",
+			"source": "CustomTiamat",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 26",
+				"average": 84
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 9,
+			"dex": 15,
+			"con": 14,
+			"int": 20,
+			"wis": 15,
+			"cha": 12,
+			"save": {
+				"con": "+6",
+				"int": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+13",
+				"insight": "+6",
+				"investigation": "+13",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"languages": [
+				"Common plus any three languages"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The red wizard evoker is a 14th-level spellcaster that uses Intelligence as its spellcasting ability (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The red wizard evoker has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"*Transmutation spell"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch|PHB}",
+								"{@spell light|PHB}",
+								"{@spell mold earth|XGE}*",
+								"{@spell prestidigitation|PHB}*",
+								"{@spell shocking grasp|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell chromatic orb|PHB}",
+								"{@spell detect magic|PHB}",
+								"{@spell feather fall|PHB}*",
+								"{@spell shield|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell alter self|PHB}*",
+								"{@spell mirror image|PHB}",
+								"{@spell phantasmal force|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blink|PHB}*",
+								"{@spell dispel magic|PHB}",
+								"{@spell slow|PHB}*"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility|PHB}",
+								"{@spell polymorph|PHB}*"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects|PHB}*",
+								"{@spell telekinesis|PHB}*"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate|PHB}*"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell etherealness|PHB}*"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "School Specialization",
+					"entries": [
+						"Red wizard transmuters speciallize in the transmutation magic school, sacrificing their ability to cast conjuration and enchantment spells in the process. In exchange they gain the following benefits:",
+						"Each time the red wizard casts a 1st level or higher transmutation spell it gains the benefit of being casted one level higher.",
+						"When the red wizard transmuter casts a transmutation spell of 1st level or higher, it can gain resistance to acid, cold, fire, lightning, or thunder damage (but only one at a time).",
+						"The red wizard has a +1 bonus to hit and save DC of its transmutation spells."
+					]
+				},
+				{
+					"name": "Shapechanger (1/Day)",
+					"entries": [
+						"The red wizard transmuter can cast {@spell polymorph} on itself without expending a spell slot. When it does so, it transforms into a beast whose challenge rating is 1 or lower."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6 - 1}) bludgeoning damage, or 4 ({@damage 1d8 - 1}) damage if used with both hands."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/RoT/Red Wizard.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"profSave": {},
+			"profSkill": {},
+			"autoCalc": {},
+			"activeTab__input": 5,
+			"activeTab__output": 0,
+			"uniqueId": "8ca2f3465ae4d1a235f45a6d2fa78c33"
 		}
 	]
 }
