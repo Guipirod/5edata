@@ -23,10 +23,11 @@ with open(FILE_NAME, 'r') as json_file:
         # change image path
         if "fluff" in json_data["monster"][index].keys():
             for index2 in range(len(json_data["monster"][index]["fluff"]["images"])):
-                image_url = json_data["monster"][index]["fluff"]["images"][index2]["href"]["url"]
-                image_name = image_url.split("/")[-1]
-                json_data["monster"][index]["fluff"]["images"][index2]["href"]["url"] = URL_BASE+IMAGES+'/'+image_name
-                print("IMAGE", token_url, "-->", URL_BASE+IMAGES+'/'+image_name)
+                if 'url' in json_data["monster"][index]["fluff"]["images"][index2]["href"].keys():
+                    image_url = json_data["monster"][index]["fluff"]["images"][index2]["href"]["url"]
+                    image_name = image_url.split("/")[-1]
+                    json_data["monster"][index]["fluff"]["images"][index2]["href"]["url"] = URL_BASE+IMAGES+'/'+image_name
+                    print("IMAGE", token_url, "-->", URL_BASE+IMAGES+'/'+image_name)
 
 new_name = '.'.join(FILE_NAME.split('.')[:-1])
 with open(new_name+'_Online.json', 'w') as new_file:
