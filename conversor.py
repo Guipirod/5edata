@@ -21,7 +21,7 @@ with open(FILE_NAME, 'r') as json_file:
             json_data["monster"][index]["tokenUrl"] = URL_BASE+TOKENS+'/'+token_name
             print("TOKEN", token_url, "-->", URL_BASE+TOKENS+'/'+token_name)
         # change image path
-        if "fluff" in json_data["monster"][index].keys():
+        if "fluff" in json_data["monster"][index].keys() and "images" in json_data["monster"][index]["fluff"].keys():
             for index2 in range(len(json_data["monster"][index]["fluff"]["images"])):
                 if 'url' in json_data["monster"][index]["fluff"]["images"][index2]["href"].keys():
                     image_url = json_data["monster"][index]["fluff"]["images"][index2]["href"]["url"]
